@@ -4,9 +4,9 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "C:/Users/ryan7/CLionProjects/prog05/Song.cpp" "C:/Users/ryan7/CLionProjects/prog05/cmake-build-debug/CMakeFiles/prog05.dir/Song.cpp.obj"
-  "C:/Users/ryan7/CLionProjects/prog05/UtPod.cpp" "C:/Users/ryan7/CLionProjects/prog05/cmake-build-debug/CMakeFiles/prog05.dir/UtPod.cpp.obj"
-  "C:/Users/ryan7/CLionProjects/prog05/UtPodDriver.cpp" "C:/Users/ryan7/CLionProjects/prog05/cmake-build-debug/CMakeFiles/prog05.dir/UtPodDriver.cpp.obj"
+  "C:/Users/Davo/Documents/GitHub/UtPod/prog05/Song.cpp" "C:/Users/Davo/Documents/GitHub/UtPod/prog05/cmake-build-debug/CMakeFiles/prog05.dir/Song.cpp.obj"
+  "C:/Users/Davo/Documents/GitHub/UtPod/prog05/UtPod.cpp" "C:/Users/Davo/Documents/GitHub/UtPod/prog05/cmake-build-debug/CMakeFiles/prog05.dir/UtPod.cpp.obj"
+  "C:/Users/Davo/Documents/GitHub/UtPod/prog05/UtPodDriver.cpp" "C:/Users/Davo/Documents/GitHub/UtPod/prog05/cmake-build-debug/CMakeFiles/prog05.dir/UtPodDriver.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
