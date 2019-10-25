@@ -10,16 +10,20 @@ using namespace std;
 
 class Song{
 private:
-
     string artist;
     string name;
     int size;
     static const int MAX_SIZE = 512;
 public:
+    Song();
     Song(string artist, string name, int size);
     string getArtist();
     string getName();
     int getSize();
+    void setArtist(string _artist);
+    void setName(string _name);
+    void setSize(int _size);
+
 };
 
 #endif //PROG05_SONG_H

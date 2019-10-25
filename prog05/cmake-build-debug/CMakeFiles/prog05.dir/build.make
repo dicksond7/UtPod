@@ -42,10 +42,10 @@ RM = "C:\Program Files\JetBrains\CLion 2019.2.1\bin\cmake\win\bin\cmake.exe" -E 
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = C:\Users\Davo\Documents\GitHub\UtPod\prog05
+CMAKE_SOURCE_DIR = C:\Users\ryan7\OneDrive\Documents\GitHub\UtPod\prog05
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = C:\Users\Davo\Documents\GitHub\UtPod\prog05\cmake-build-debug
+CMAKE_BINARY_DIR = C:\Users\ryan7\OneDrive\Documents\GitHub\UtPod\prog05\cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/prog05.dir/depend.make
@@ -58,42 +58,42 @@ include CMakeFiles/prog05.dir/flags.make
 
 CMakeFiles/prog05.dir/UtPodDriver.cpp.obj: CMakeFiles/prog05.dir/flags.make
 CMakeFiles/prog05.dir/UtPodDriver.cpp.obj: ../UtPodDriver.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Davo\Documents\GitHub\UtPod\prog05\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/prog05.dir/UtPodDriver.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\prog05.dir\UtPodDriver.cpp.obj -c C:\Users\Davo\Documents\GitHub\UtPod\prog05\UtPodDriver.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ryan7\OneDrive\Documents\GitHub\UtPod\prog05\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/prog05.dir/UtPodDriver.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\prog05.dir\UtPodDriver.cpp.obj -c C:\Users\ryan7\OneDrive\Documents\GitHub\UtPod\prog05\UtPodDriver.cpp
 
 CMakeFiles/prog05.dir/UtPodDriver.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/prog05.dir/UtPodDriver.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Davo\Documents\GitHub\UtPod\prog05\UtPodDriver.cpp > CMakeFiles\prog05.dir\UtPodDriver.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ryan7\OneDrive\Documents\GitHub\UtPod\prog05\UtPodDriver.cpp > CMakeFiles\prog05.dir\UtPodDriver.cpp.i
 
 CMakeFiles/prog05.dir/UtPodDriver.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/prog05.dir/UtPodDriver.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Davo\Documents\GitHub\UtPod\prog05\UtPodDriver.cpp -o CMakeFiles\prog05.dir\UtPodDriver.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ryan7\OneDrive\Documents\GitHub\UtPod\prog05\UtPodDriver.cpp -o CMakeFiles\prog05.dir\UtPodDriver.cpp.s
 
 CMakeFiles/prog05.dir/UtPod.cpp.obj: CMakeFiles/prog05.dir/flags.make
 CMakeFiles/prog05.dir/UtPod.cpp.obj: ../UtPod.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Davo\Documents\GitHub\UtPod\prog05\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/prog05.dir/UtPod.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\prog05.dir\UtPod.cpp.obj -c C:\Users\Davo\Documents\GitHub\UtPod\prog05\UtPod.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ryan7\OneDrive\Documents\GitHub\UtPod\prog05\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/prog05.dir/UtPod.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\prog05.dir\UtPod.cpp.obj -c C:\Users\ryan7\OneDrive\Documents\GitHub\UtPod\prog05\UtPod.cpp
 
 CMakeFiles/prog05.dir/UtPod.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/prog05.dir/UtPod.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Davo\Documents\GitHub\UtPod\prog05\UtPod.cpp > CMakeFiles\prog05.dir\UtPod.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ryan7\OneDrive\Documents\GitHub\UtPod\prog05\UtPod.cpp > CMakeFiles\prog05.dir\UtPod.cpp.i
 
 CMakeFiles/prog05.dir/UtPod.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/prog05.dir/UtPod.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Davo\Documents\GitHub\UtPod\prog05\UtPod.cpp -o CMakeFiles\prog05.dir\UtPod.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ryan7\OneDrive\Documents\GitHub\UtPod\prog05\UtPod.cpp -o CMakeFiles\prog05.dir\UtPod.cpp.s
 
 CMakeFiles/prog05.dir/Song.cpp.obj: CMakeFiles/prog05.dir/flags.make
 CMakeFiles/prog05.dir/Song.cpp.obj: ../Song.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\Davo\Documents\GitHub\UtPod\prog05\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/prog05.dir/Song.cpp.obj"
-	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\prog05.dir\Song.cpp.obj -c C:\Users\Davo\Documents\GitHub\UtPod\prog05\Song.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ryan7\OneDrive\Documents\GitHub\UtPod\prog05\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/prog05.dir/Song.cpp.obj"
+	C:\MinGW\bin\g++.exe  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles\prog05.dir\Song.cpp.obj -c C:\Users\ryan7\OneDrive\Documents\GitHub\UtPod\prog05\Song.cpp
 
 CMakeFiles/prog05.dir/Song.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/prog05.dir/Song.cpp.i"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\Davo\Documents\GitHub\UtPod\prog05\Song.cpp > CMakeFiles\prog05.dir\Song.cpp.i
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ryan7\OneDrive\Documents\GitHub\UtPod\prog05\Song.cpp > CMakeFiles\prog05.dir\Song.cpp.i
 
 CMakeFiles/prog05.dir/Song.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/prog05.dir/Song.cpp.s"
-	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\Davo\Documents\GitHub\UtPod\prog05\Song.cpp -o CMakeFiles\prog05.dir\Song.cpp.s
+	C:\MinGW\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S C:\Users\ryan7\OneDrive\Documents\GitHub\UtPod\prog05\Song.cpp -o CMakeFiles\prog05.dir\Song.cpp.s
 
 # Object files for target prog05
 prog05_OBJECTS = \
@@ -111,7 +111,7 @@ prog05.exe: CMakeFiles/prog05.dir/build.make
 prog05.exe: CMakeFiles/prog05.dir/linklibs.rsp
 prog05.exe: CMakeFiles/prog05.dir/objects1.rsp
 prog05.exe: CMakeFiles/prog05.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\Davo\Documents\GitHub\UtPod\prog05\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable prog05.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\ryan7\OneDrive\Documents\GitHub\UtPod\prog05\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable prog05.exe"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles\prog05.dir\link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -124,6 +124,6 @@ CMakeFiles/prog05.dir/clean:
 .PHONY : CMakeFiles/prog05.dir/clean
 
 CMakeFiles/prog05.dir/depend:
-	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\Davo\Documents\GitHub\UtPod\prog05 C:\Users\Davo\Documents\GitHub\UtPod\prog05 C:\Users\Davo\Documents\GitHub\UtPod\prog05\cmake-build-debug C:\Users\Davo\Documents\GitHub\UtPod\prog05\cmake-build-debug C:\Users\Davo\Documents\GitHub\UtPod\prog05\cmake-build-debug\CMakeFiles\prog05.dir\DependInfo.cmake --color=$(COLOR)
+	$(CMAKE_COMMAND) -E cmake_depends "MinGW Makefiles" C:\Users\ryan7\OneDrive\Documents\GitHub\UtPod\prog05 C:\Users\ryan7\OneDrive\Documents\GitHub\UtPod\prog05 C:\Users\ryan7\OneDrive\Documents\GitHub\UtPod\prog05\cmake-build-debug C:\Users\ryan7\OneDrive\Documents\GitHub\UtPod\prog05\cmake-build-debug C:\Users\ryan7\OneDrive\Documents\GitHub\UtPod\prog05\cmake-build-debug\CMakeFiles\prog05.dir\DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/prog05.dir/depend
 

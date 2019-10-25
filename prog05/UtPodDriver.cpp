@@ -18,8 +18,13 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
-    UtPod t;
 
+    Song songOne("playBoi Carti", "magnolia", 64);
+    cout << songOne.getName() << " by " << songOne.getArtist()<< endl;
+
+    //below is the actual driver
+    /*
+    UtPod t;
     Song s1("Beatles", "Hey Jude1", 4);
     int result = t.addSong(s1);
     cout << "result = " << result << endl;
@@ -71,6 +76,6 @@ int main(int argc, char *argv[])
 
     t.showSongList();
     cout << "memory = " << t.getRemainingMemory() << endl;
-
-
+*/
+    return 0;
 }

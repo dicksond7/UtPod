@@ -4,12 +4,30 @@
 
 #include "UtPod.h"
 
-UtPod::UtPod(){
-    songs = NULL;
-    memSize = MAX_MEMORY;
+UtPod::UtPod(int _size){
+
+    song->next = nullptr;
+
+    if(_size>MAX_MEMORY || _size <= 0){
+        memSize = MAX_MEMORY;
+    }
+    else{
+        memSize = _size;
+    }
 }
 
 int UtPod::addSong(Song const &s) {
+    /*
+    if(( s.getSize() + memSize) > MAX_MEMORY){
+        return 0;
+    }
+    else{
+        SongNode *newNode = new UtPod::SongNode();
+        newNode->next = song;
+        newNode->s = s;
+        song = newNode;
+    }
+     */
     return 0;
 }
 

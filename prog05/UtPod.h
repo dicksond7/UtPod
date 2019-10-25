@@ -17,14 +17,14 @@ private:
         SongNode *next;
     };
 
-    SongNode *songs;  //the head pointer
+    SongNode *song;  //the head pointer
 
     int memSize;
 
 public:
     //Default constructor
     //set the memory size to MAX_MEMORY
-    UtPod();
+    UtPod(int size);
 
     //Constructor with size parameter
     //The user of the class will pass in a size.
