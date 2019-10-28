@@ -20,17 +20,17 @@ private:
     SongNode *song;  //the head pointer
 
     int memSize;
-
+    int currentMem;
 public:
     //Default constructor
     //set the memory size to MAX_MEMORY
+    UtPod();
     UtPod(int size);
 
     //Constructor with size parameter
     //The user of the class will pass in a size.
     //If the size is greater than MAX_MEMORY or less than or equal to 0,
     //set the size to MAX_MEMORY.
-    //UtPod(int size); <- WHY DO WE NEED THIS???
 
     /* FUNCTION - int addSong
      * attempts to add a new song to the UtPod

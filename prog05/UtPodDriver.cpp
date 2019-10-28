@@ -23,12 +23,12 @@ int main(int argc, char *argv[])
     cout << songOne.getName() << " by " << songOne.getArtist()<< endl;
 
     //below is the actual driver
-    /*
-    UtPod t;
+
+    UtPod t(3);
     Song s1("Beatles", "Hey Jude1", 4);
     int result = t.addSong(s1);
     cout << "result = " << result << endl;
-
+    /*
     t.showSongList();
 
     Song s2("Beatles", "Hey Jude2", 5);
