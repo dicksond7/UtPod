@@ -1,0 +1,110 @@
+This file will be used to keep track of different changes and code structure
+//
+// Created by ryan7 on 10/22/2019.
+//
+
+#include "UtPod.h"
+bool operator == (Song &s, Song &s1){
+    int equal = 0; //equal must be == 3 for songs to be equal
+    if(s.getName() == s1.getName()){
+        equal += 1;
+    }
+    if(s.getSize() == s1.getSize()){
+        equal += 1;
+    }
+    if(s.getArtist() == s.getArtist()){
+        equal += 1;
+    }
+    return equal == 3;
+}
+
+
+UtPod::UtPod() {
+    song = nullptr;
+    memSize = 512;
+    currentMem = 0;
+}
+
+UtPod::UtPod(int _size){
+    song = nullptr;
+    if(_size>MAX_MEMORY || _size <= 0){
+        memSize = MAX_MEMORY;
+    }
+    else{
+        memSize = _size;
+    }
+    currentMem = 0;
+
+}
+
+int UtPod::addSong(Song const &s) {
+
+    Song testSong = s;
+    if(testSong.getSize() + (currentMem) > memSize){
+        return -1;
+    }
+    else{
+        SongNode *newNode;
+        newNode = new UtPod::SongNode();
+        newNode->next = song;
+        newNode->s = s;
+        song = newNode;
+    }
+
+    return 0;
+}
+
+int UtPod::removeSong(Song const &s) {
+    Song testSong = s;
+    SongNode *currentPtr = song;
+    SongNode *prvPtr = nullptr;
+    bool songRemoved = false;
+    if(currentPtr->next == nullptr){
+        return -1;
+    }else if(currentPtr->next->next == nullptr){
+        free(song);
+        song = nullptr;
+    }else{
+        while(!songRemoved){
+            if(currentPtr->s == testSong){
+                prvPtr->next = currentPtr->next;
+                free(currentPtr);
+                songRemoved = true;
+            }else{
+                prvPtr = currentPtr;
+                currentPtr = currentPtr->next;
+            }
+
+        }
+    }
+    return 0;
+}
+void UtPod::shuffle() {
+
+}
+void UtPod::showSongList(){
+
+}
+
+void UtPod::sortSongList(){
+
+}
+
+void UtPod::clearMemory(){
+
+}
+
+int UtPod::getRemainingMemory(){
+    return 0;
+}
+
+UtPod::~UtPod() {
+
+}
+
+
+
+
+
+  friend bool operator == (Song& s, Song&s1);
+
