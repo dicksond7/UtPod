@@ -3,6 +3,22 @@
 //
 #include <cstdlib>
 #include "UtPod.h"
+
+bool operator == (Song &s, Song &s1){
+    int equal = 0; //equal must be == 3 for songs to be equal
+    if(s.getName() == s1.getName()){
+        equal += 1;
+    }
+    if(s.getSize() == s1.getSize()){
+        equal += 1;
+    }
+    if(s.getArtist() == s.getArtist()){
+        equal += 1;
+    }
+    return equal == 3;
+}
+
+
 UtPod::UtPod() {
     song = nullptr;
     memSize = 512;
@@ -36,11 +52,45 @@ int UtPod::addSong(Song const &s) {
 }
 
 int UtPod::removeSong(Song const &s) {
+    Song testSong = s;
+    cout<<"name of song at head: " << song->s.getName() << endl;
+    SongNode *currentPtr = song;
+    SongNode *prvPtr = nullptr;
+    bool songRemoved = false;
+    if(currentPtr == nullptr){
+        return -1;
+    }else if(song->s == testSong){
+        cout<<"here we are"<<endl;
+        SongNode *nodeNext = song->next;
+        if(nodeNext == nullptr){
+            cout<<"if statement" << endl;
+            free(song);
+            song = nullptr;
+        }else{
+            cout<<"else statement"<<endl;
+            free(song);
+            song = currentPtr->next;
+        }
+    }else{
+        prvPtr = currentPtr;
+        currentPtr = song->next;
+        while(!songRemoved){
+            if(currentPtr->s == testSong){
+                prvPtr->next = currentPtr->next;
+                free(currentPtr);
+                songRemoved = true;
+            }else{
+                prvPtr = currentPtr;
+                currentPtr = currentPtr->next;
+            }
 
+        }
+    }
     return 0;
 }
+
 void UtPod::shuffle() {
-    
+
 
 }
 void UtPod::showSongList(){
@@ -83,6 +133,8 @@ int UtPod::getRemainingMemory(){
     }
     return mem;
 }
+
+
 UtPod::~UtPod() {
 
 }

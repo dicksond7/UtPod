@@ -27,11 +27,15 @@ int main(int argc, char *argv[])
     Song s1("Beatles", "Hey Jude1", 4);
     Song s3("Post Malone", "Rockstar", 4);
     int result = t.addSong(s1);
-    int result2 = t.addSong(s2);
-    int result3 = t.addSong(s3);
+    //int result2 = t.addSong(s2);
+    //int result3 = t.addSong(s3);
     cout << "result = " << result << endl;
     t.showSongList();
     cout << "memory: " << t.getRemainingMemory() << endl;
+    cout << "Removing Song" << endl;
+    t.removeSong(s1);
+    t.showSongList();
+
     t.clearMemory();
     cout <<"memory cleared" << endl;
     t.showSongList();
