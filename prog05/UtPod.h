@@ -20,7 +20,6 @@ private:
     SongNode *song;  //the head pointer
 
     int memSize;
-    int currentMem;
 public:
     //Default constructor
     //set the memory size to MAX_MEMORY
