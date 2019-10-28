@@ -18,6 +18,10 @@ bool operator == (Song &s, Song &s1){
     return equal == 3;
 }
 
+bool operator > (Song& s, Song& s1){
+    return false;
+}
+
 
 UtPod::UtPod() {
     song = nullptr;
@@ -53,21 +57,21 @@ int UtPod::addSong(Song const &s) {
 
 int UtPod::removeSong(Song const &s) {
     Song testSong = s;
-    cout<<"name of song at head: " << song->s.getName() << endl;
+    //cout<<"name of song at head: " << song->s.getName() << endl;
     SongNode *currentPtr = song;
     SongNode *prvPtr = nullptr;
     bool songRemoved = false;
     if(currentPtr == nullptr){
         return -1;
     }else if(song->s == testSong){
-        cout<<"here we are"<<endl;
+        //cout<<"here we are"<<endl;
         SongNode *nodeNext = song->next;
         if(nodeNext == nullptr){
             cout<<"if statement" << endl;
             free(song);
             song = nullptr;
         }else{
-            cout<<"else statement"<<endl;
+            //cout<<"else statement"<<endl;
             free(song);
             song = currentPtr->next;
         }

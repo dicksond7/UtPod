@@ -132,7 +132,8 @@ public:
 
     int getRemainingMemory();
 
-    friend bool operator == (Song& s, Song&s1);
+    friend bool operator == (Song& s, Song& s1);
+    friend bool operator > (Song& s, Song& s1);
 
 
     ~UtPod();
