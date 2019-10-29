@@ -5,9 +5,4 @@ set(CMAKE_CXX_STANDARD 14)
 
 include_directories(.)
 
-add_executable(prog05
-        Song.cpp
-        Song.h
-        UtPod.cpp
-        UtPod.h
-        UtPodDriver.cpp)
+add_executable(prog05 Song.cpp Song.h UtPod.cpp UtPod.h UtPodDriver.cpp)
