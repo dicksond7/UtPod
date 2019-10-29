@@ -56,6 +56,9 @@ int main(int argc, char *argv[])
     t.sortSongList();
     t.showSongList();
 
+    t.removeSong(s4);
+    t.showSongList();
+
     /*
     t.showSongList();
     Song s2("Beatles", "Hey Jude2", 5);

@@ -23,6 +23,8 @@ public:
     void setArtist(string _artist);
     void setName(string _name);
     void setSize(int _size);
+    friend bool operator == (Song& s, Song& s1);
+    friend bool operator > (Song& s, Song& s1);
 
 };
 
