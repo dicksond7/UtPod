@@ -43,8 +43,9 @@ bool operator > (Song &s1, Song &s2){
     }
     if(length1 < length2){
         return true;
-    }
-    else if(length1 > length2){
+    }else if(length1 > length2){
+        return false;
+    }else{
         return false;
     }
 
@@ -123,11 +124,31 @@ int UtPod::removeSong(Song const &s) {
 
 void UtPod::shuffle() {
 
+    for(int i = 0; i < (2*numberOfSongs()); i++){
+        SongNode *tempNode1 = song;
+        SongNode *tempNode2 = song;
+        int random1 = rand() % numberOfSongs();
+        int random2 = rand() % numberOfSongs();
+
+        for(int j = 0; j < random1 ; j++){
+            tempNode1 = tempNode1->next;
+
+        }
+
+        for(int j = 0; j < random2; j++){
+            tempNode2 = tempNode2->next;
+        }
+        Song tempSong = tempNode2->s;
+        tempNode2->s = tempNode1->s;
+        tempNode1->s = tempSong;
+
+    }
+
 
 }
 void UtPod::showSongList(){
     SongNode *node = song;
-    if(node == NULL){
+    if(node == nullptr){
         cout <<"no songs in Ut Pod" <<endl;
     }
     else{
@@ -163,52 +184,48 @@ void UtPod::sortSongList(){
         checkNode = song;
         //headNode = song;
         nextNode = song->next;
-        cout << "net yet sorted. checking whole list" << endl;
+        //cout << "net yet sorted. checking whole list" << endl;
         isSorted = true;
         if(nextNode->s > checkNode->s){
-            cout << "swapping!" << endl;
+            Song tempSong = nextNode->s;
+            //cout << "swapping!" << endl;
             //swap the nodes
             //SongNode *HolderNode = headNode;
-            checkNode->next = nextNode->next;
-            song = nextNode;
-            song->next = checkNode;
+            nextNode->s = checkNode->s;
+            checkNode->s = tempSong;
+
             isSorted = false;
             continue;
         }
 
-        prvNode = checkNode;
         checkNode = checkNode->next;
         nextNode = checkNode->next;
         //headNode = checkNode;
         //nextNode = checkNode->next;
-        cout << "song node: " << song->s.getName() <<endl;
-        cout << "previous Node: " << prvNode->s.getName() << endl;
-        cout << "check Node: " << checkNode->s.getName() <<endl;
-        cout << "next Node:" << nextNode->s.getName() << endl;
+
 
         while (checkNode->next != nullptr) {
-            cout << "checking nodes!" << endl;
+            //cout << "checking nodes!" << endl;
             //nextNode = checkNode->next;
             if(nextNode->s > checkNode->s){
-                cout << "swapping while if" << endl;
+                Song tempSong = nextNode->s;
+                //cout << "swapping while if" << endl;
                 //swap the nodes
                 //SongNode *HolderNode = headNode;
-                headNode = checkNode->next;
-                prvNode->next = nextNode;
-                checkNode->next = nextNode->next;
-                nextNode->next = checkNode->next;
+                nextNode->s = checkNode->s;
+                checkNode->s = tempSong;
 
                 isSorted = false;
             }
-            cout << "completed checking a node" << endl;
-            prvNode = checkNode;
+            //cout << "completed checking a node" << endl;
             checkNode = checkNode->next;
-            showSongList();
+            nextNode = checkNode->next;
+
         }
-        cout << "completed checking the list" << endl;
+        //cout << "completed checking the list" << endl;
 
     }
-    cout << "list is sorted!" << endl;
+    //cout << "list is sorted!" << endl;
 }
 
 void UtPod::clearMemory(){
@@ -232,7 +249,19 @@ int UtPod::getRemainingMemory(){
     return mem;
 }
 
+int UtPod::numberOfSongs(){
+    SongNode *tempNode = song;
+    int numSongs = 0;
+    while(tempNode->next != nullptr){
+        numSongs++;
+        tempNode = tempNode->next;
+    }
+    numSongs += 1;
+    return numSongs;
+}
+
 
 UtPod::~UtPod() {
+    clearMemory();
 
 }

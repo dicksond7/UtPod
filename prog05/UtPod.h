@@ -120,6 +120,8 @@ public:
         return memSize;
     }
 
+    int numberOfSongs();
+
 
 
     /* FUNCTION - int getRemainingMemory

@@ -11,6 +11,7 @@ You will want to do more complete testing.
 */
 #include <cstdlib>
 #include <iostream>
+#include <ctime>
 #include "Song.h"
 #include "UtPod.h"
 
@@ -18,6 +19,7 @@ using namespace std;
 
 int main(int argc, char *argv[])
 {
+    srand(time(nullptr));
 
 
     //below is the actual driver
@@ -36,10 +38,24 @@ int main(int argc, char *argv[])
     int result5 = t.addSong(s5);
     int result6 = t.addSong(s6);
     t.showSongList();
-    cout << endl;
+    cout << "\n" << endl;
     t.sortSongList();
-    cout << endl;
+
     t.showSongList();
+    cout << "\nShuffle 1: \n" << endl;
+    t.shuffle();
+    t.showSongList();
+    cout << "\nShuffle 2: \n" << endl;
+    t.shuffle();
+    t.showSongList();
+    cout << "\nShuffle 3: \n" << endl;
+    t.shuffle();
+    t.showSongList();
+
+    cout << "\n" << endl;
+    t.sortSongList();
+    t.showSongList();
+
     /*
     t.showSongList();
     Song s2("Beatles", "Hey Jude2", 5);
