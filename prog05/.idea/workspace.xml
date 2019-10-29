@@ -19,6 +19,7 @@
   <component name="ClangdSettings">
     <option name="formatViaClangd" value="false" />
   </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="Git.Settings">
     <option name="ADD_SUFFIX_TO_CHERRY_PICKS_OF_PUBLISHED_COMMITS" value="false" />
     <option name="PREVIEW_PUSH_ON_COMMIT_AND_PUSH" value="false" />
@@ -68,6 +69,7 @@
       <workItem from="1571855022553" duration="4774000" />
       <workItem from="1571948024636" duration="9333000" />
       <workItem from="1572224175378" duration="2441000" />
+      <workItem from="1572301374368" duration="11492000" />
     </task>
     <servers />
   </component>
