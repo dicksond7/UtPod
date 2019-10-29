@@ -22,23 +22,47 @@ int main(int argc, char *argv[])
     srand(time(nullptr));
 
 
+
     //below is the actual driver
 
     UtPod t(512);
-    Song s1("PlayBoi Carti", "Lean4Real", 3);
+    cout << "shuffling..." << endl;
+    t.shuffle();
+    cout <<endl;
+    cout <<"sorting..." <<endl;
+    t.sortSongList();
+    cout<<endl;
+
+    Song s1("PlayBoi Carti", "4Real", 3);
     Song s2("PlayBoi Carti", "Magnolia", 3);
     Song s3("Post Malone", "Rockstar", 3);
-    Song s4("Kodak Balck", "Codine Dreamin", 3);
+    Song s4("Kodak Balck", "Dreamin", 3);
     Song s5("Drake", "Marvin's room", 3);
     Song s6("Kendrick Lamar", "Swimming Pools", 3);
+    Song s7("Travis Scott", "Highest in the Room", 5);
+    Song s8("Frank Ocean", "DHL", 6);
+    Song s9("Kendrick Lamar", "Swimming Pools (extended remix)", 5);
+
+    cout<< "adding more songs" << endl;
+    cout<<endl;
     int result1 = t.addSong(s1);
     int result2 = t.addSong(s2);
     int result3 = t.addSong(s3);
     int result4 = t.addSong(s4);
+    t.showSongList();
+    cout << endl;
+    cout<< "adding more songs" << endl;
+    cout<<endl;
     int result5 = t.addSong(s5);
     int result6 = t.addSong(s6);
+    int result7 = t.addSong(s7);
+    int result8 = t.addSong(s8);
+    int result9 = t.addSong(s9);
     t.showSongList();
-    cout << "\n" << endl;
+    cout<< t.getRemainingMemory() << " MB left in UtPod" <<endl;
+    cout << endl;
+    cout << "sorting song list..." << endl;
+    cout << endl;
     t.sortSongList();
 
     t.showSongList();
@@ -52,12 +76,19 @@ int main(int argc, char *argv[])
     t.shuffle();
     t.showSongList();
 
-    cout << "\n" << endl;
+    cout << endl;
+    cout << "sorting list..." <<endl << endl;
     t.sortSongList();
     t.showSongList();
 
+    cout <<endl;
+    cout << "removing " <<s4.getName() << " by " << s4.getArtist() <<endl;
+    cout <<endl;
     t.removeSong(s4);
+
     t.showSongList();
+
+
 
     /*
     t.showSongList();

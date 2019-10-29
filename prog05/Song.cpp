@@ -49,8 +49,8 @@ bool operator == (Song &s, Song &s1){
 
 //returns true if 1st song should come before 2nd song
 bool operator > (Song &s1, Song &s2){
-    string name1 = s1.getName();
-    string name2 = s2.getName();
+    string name1 = s1.getArtist();
+    string name2 = s2.getArtist();
     int length1 = name1.length();
     int length2 = name2.length();
     int length=0;
@@ -73,7 +73,32 @@ bool operator > (Song &s1, Song &s2){
     }else if(length1 > length2){
         return false;
     }else{
-        return false;
+        name1 = s1.getName();
+        name2 = s2.getName();
+        length1 = name1.length();
+        length2 = name2.length();
+        length=0;
+        if(length1 < length2){
+            length = length1;
+        }
+        else{
+            length = length2;
+        }
+        for(int i =0; i<length; i++){
+            if(name1[i] < name2[i]){
+                return true;
+            }
+            else if(name1[i] > name2[i]){
+                return false;
+            }
+        }
+        if(length1 < length2){
+            return true;
+        }else if(length1 > length2){
+            return false;
+        }else{
+            return false;
+        }
     }
 
 
